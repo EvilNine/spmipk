@@ -1,0 +1,20 @@
+.header {
+    background-color: $header-bg;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: $transition-base;
+   
+    &.header__fixed  {
+        box-shadow: $box-shadow-sm;
+        position: fixed;
+        animation-name: header__scroll;
+        animation-duration: .4s;
+    }
+}
+
+@keyframes header__scroll{
+    0%{transform: translateY(-100%);}
+    to{transform: translateY(0%)}
+}

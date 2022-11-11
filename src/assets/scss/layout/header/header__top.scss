@@ -1,0 +1,55 @@
+.header__top {
+    
+
+    &-logo {
+        width: 140px;
+        img {
+            max-width: 100%;
+        }
+    }
+    &-social {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    &-address {
+        display: flex;
+        white-space: nowrap;
+        font-size: .875rem;
+        line-height: 1.25;
+    }
+    &-mail {
+        display: flex;
+        a {
+            color: $dark;
+            text-decoration: none;
+            
+        }
+    }
+    &-phone {
+        display: grid;
+        grid-template-areas: 
+            "icon text text"
+            "icon phone phone";
+        p {
+            font-size: .75rem;
+            text-transform: uppercase;
+            width: 100%;
+            grid-area: text;
+            line-height: 1;
+        }
+        .icon {
+            grid-area: icon;
+            align-self: center;
+            margin-right: .313rem;
+        }
+        a {
+            color: $primary;
+            font-size: 1.125rem;
+            text-decoration: none;
+            font-weight: $font-weight-bold;
+            grid-area: phone;
+        }
+    }
+
+}
