@@ -1,0 +1,12 @@
+.header__nav {
+    border-top: 1px solid $light;
+    
+    &-link {
+        text-decoration: none;
+        @media (hover: hover) {
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
